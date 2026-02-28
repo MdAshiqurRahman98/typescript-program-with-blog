@@ -1,7 +1,7 @@
-## Blog on TypeScript
+# Blog on TypeScript
 
-### Interface vs Type
-Topic 1 — Differences Between Interfaces and Types in TypeScript
+## Interface vs Type
+### Topic 1 — Differences Between Interfaces and Types in TypeScript
 
 In TypeScript, both interface and type are used to define the shape of data, but they have some important differences in usage and capabilities.
 
@@ -57,8 +57,8 @@ Conclusion
 
 Both are powerful tools. In general, use interfaces for scalability and readability, and types for flexibility and advanced type compositions.
 
-### `keyof` keyword
-Topic 2 — What is the Use of the `keyof` Keyword in TypeScript?
+## `keyof` keyword
+### Topic 2 — What is the Use of the `keyof` Keyword in TypeScript?
 
 The keyof keyword is a type operator that extracts the keys of an object type and creates a union of those keys. It helps make code safer by ensuring only valid property names are used.
 
@@ -96,8 +96,8 @@ Conclusion
 
 The `keyof` operator is essential for writing robust and maintainable TypeScript code, especially when building reusable utilities or working with dynamic object properties.
 
-### Difference Between `any`, `unknown`, and `never`
-Topic 3 — Difference Between `any`, `unknown`, and `never` in TypeScript
+## Difference Between `any`, `unknown`, and `never`
+### Topic 3 — Difference Between `any`, `unknown`, and `never` in TypeScript
 
 TypeScript provides special types like any, unknown, and never to handle different scenarios when working with values whose types may not be straightforward.
 
@@ -147,8 +147,8 @@ Summary
 
 `never` → Impossible value
 
-### Use of Enums
-Topic 4 — Use of Enums in TypeScript (Numeric and String Enum)
+## Use of Enums
+### Topic 4 — Use of Enums in TypeScript (Numeric and String Enum)
 
 Enums allow you to define a set of named constants, making code more readable and maintainable.
 
@@ -187,8 +187,8 @@ Benefits of Enums
 
 - Useful for fixed sets of options
 
-### Example of Union and Intersection Types
-Topic 5 — Example of Union and Intersection Types in TypeScript
+## Example of Union and Intersection Types
+### Topic 5 — Example of Union and Intersection Types in TypeScript
 
 Union and intersection types help combine multiple types in flexible ways.
 
@@ -237,12 +237,15 @@ Intersection → Both types
 
 ## How to Run
 
-1. Install dependencies:
+1. Install Dependencies:
 ```bash
 npm install
 ```
 2. Compile TypeScript:
 ```bash
-npm run build
+npx tsc solution.ts
 ```
-Compiled JS will appear in `dist/`.
+3. Run the Program:
+```bash
+node solution.js
+```
