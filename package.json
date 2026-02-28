@@ -1,0 +1,16 @@
+{
+  "name": "typescript-programs-with-blog-post",
+  "version": "1.0.0",
+  "description": "Topic 1 — Differences Between Interfaces and Types in TypeScript",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
