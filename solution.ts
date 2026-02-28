@@ -1,6 +1,6 @@
 type FormatInput = string | number | boolean;
 
-export function formatValue(value: FormatInput): string | number | boolean {
+function formatValue(value: FormatInput): string | number | boolean {
   if (typeof value === 'string') {
     return value.toUpperCase();
   }
@@ -12,7 +12,7 @@ export function formatValue(value: FormatInput): string | number | boolean {
   return !value;
 }
 
-export function getLength(value: string | unknown[]): number {
+function getLength(value: string | unknown[]): number {
   if (typeof value === 'string') {
     return value.length;
   }
@@ -24,7 +24,7 @@ export function getLength(value: string | unknown[]): number {
   return 0;
 }
 
-export class Person {
+class Person {
   name: string;
   age: number;
 
@@ -43,7 +43,7 @@ type RatedItem = {
   rating: number;
 };
 
-export function filterByRating(items: RatedItem[]): RatedItem[] {
+function filterByRating(items: RatedItem[]): RatedItem[] {
   return items.filter(item => item.rating >= 4);
 }
 
@@ -54,23 +54,23 @@ type User = {
   isActive: boolean;
 };
 
-export function filterActiveUsers(users: User[]): User[] {
+function filterActiveUsers(users: User[]): User[] {
   return users.filter(user => user.isActive === true);
 }
 
-export interface Book {
+interface Book {
   title: string;
   author: string;
   publishedYear: number;
   isAvailable: boolean;
 }
 
-export function printBookDetails(book: Book): string {
+function printBookDetails(book: Book): string {
   const availability = book.isAvailable ? 'Yes' : 'No';
   return `Title: ${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${availability}`;
 }
 
-export function getUniqueValues<T extends string | number>(
+function getUniqueValues<T extends string | number>(
   arr1: T[],
   arr2: T[]
 ): T[] {
@@ -107,7 +107,7 @@ type Product = {
   discount?: number;
 };
 
-export function calculateTotalPrice(products: Product[]): number {
+function calculateTotalPrice(products: Product[]): number {
   if (products.length === 0) return 0;
 
   return products
