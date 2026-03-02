@@ -57,6 +57,8 @@ Use types for complex type logic or when working with unions.
 
 Both are powerful tools. In general, use interfaces for scalability and readability, and types for flexibility and advanced type compositions.
 
+---
+
 ## `keyof` keyword
 ### Topic 2 — What is the Use of the `keyof` Keyword in TypeScript?
 
@@ -95,6 +97,8 @@ If you try to pass an invalid key, TypeScript will produce a compile-time error,
 **Conclusion**
 
 The **keyof** operator is essential for writing robust and maintainable TypeScript code, especially when building reusable utilities or working with dynamic object properties.
+
+---
 
 ## Difference Between `any`, `unknown`, and `never`
 ### Topic 3 — Difference Between `any`, `unknown`, and `never` in TypeScript
@@ -147,6 +151,8 @@ For exhaustive checks or functions that never complete.
 
 **`never`** → Impossible value
 
+---
+
 ## Use of Enums
 ### Topic 4 — Use of Enums in TypeScript (Numeric and String Enum)
 
@@ -186,6 +192,8 @@ String enums are more descriptive and easier to debug.
 - Makes code self-documenting
 
 - Useful for fixed sets of options
+
+---
 
 ## Example of Union and Intersection Types
 ### Topic 5 — Example of Union and Intersection Types in TypeScript
@@ -239,7 +247,7 @@ When combining multiple object types into one.
 
 1. Install Dependencies:
 ```bash
-npm install
+npm install -y
 ```
 2. Compile TypeScript:
 ```bash
